@@ -4,7 +4,7 @@ import requests
 
 class Metric:   
 
-    url = 'http://144.91.75.6:8081/api/v1/metrics/'
+    url = 'https://mestrado.amersonchagas.com.br/api/v1/metrics/'
 
     def save_metric(self, grammar, dataset, phenotype, accuracy, accuracy_sd, f1_score, f1_score_sd):
         data = {
