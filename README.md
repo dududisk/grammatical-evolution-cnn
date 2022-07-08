@@ -1,1 +1,1 @@
-# mestrado-python
+# python-mestrado
