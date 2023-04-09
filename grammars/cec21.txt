@@ -1,0 +1,13 @@
+<final> ::= <exp2> <fc> *lr- <lr>
+<exp2> ::= (<exp1> * <m>)
+<exp1> ::= (<conv> <pool>)
+<fc> ::= fc * <k> * <fcneurons>
+<pool> ::= pool - <dropout> | ''
+<conv> ::= (conv * <n>) <bnorm>
+<dropout> ::= dropout | ''
+<bnorm> ::= bnorm- | ''
+<lr> ::= 0.1 | 0.01 | 0.001 | 0.0001
+<fcneurons> ::= 64 | 128 | 256 | 512
+<n> ::= 1 | 2 | 3
+<k> ::= 0 | 1 | 2
+<m> ::= 1 | 2 | 3;
